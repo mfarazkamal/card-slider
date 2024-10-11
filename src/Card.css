@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 12em;
+  justify-content: center;
+  /* margin: 10em 0; */
+}
+
+
+.upperText .mainTitle{
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient( #ac5d29, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline{
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.images{
+    display: flex;
+    gap: 10px;
+   
+    margin: 40px 0;
+}
+
+.profileCard{
+    width: 18%;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.profileCard.active {
+    opacity: 1;  
+  }
+
+.lowerText{
+    background-color: #f6f6f6;
+    width: 80%;
+    padding: 1.5vw;
+    border-radius: 10px;
+}
+
+.lowerText p{
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.lowerText p span{
+    color: #fe7a36;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+.slide {
+    animation: slideIn 0.3s ease forwards;  /* Apply sliding animation */
+  }
+  
+  /* Keyframes for sliding animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);  /* Start from right */
+      opacity: 0;  
+    }
+
+    80% {
+        transform: translateX(30%);  
+        opacity: 0;  
+      }
+
+    100% {
+      transform: translateX(0);  
+      opacity: 1;  
+    }
+  }
